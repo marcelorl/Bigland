@@ -18,3 +18,5 @@ _temp
 !wallaby.js
 
 npm-debug.log
+
+app/bower_components

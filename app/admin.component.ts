@@ -7,9 +7,9 @@ import {AuthenticationService} from './authentication.service'
   template: `
             <div class="container" >
                 <div class="content">
-                    <span>Congratulations, you have successfully logged in!!</span>
+                    <span>Parabéns, você está logado.</span>
                     <br />
-                    <a (click)="logout()" href="#">Click Here to logout</a>
+                    <a (click)="logout()" href="#">Logout</a>
                 </div>
             </div>
     	`

@@ -2,21 +2,36 @@
 <html>
   <head>
     <base href="/">
-    <title>Angular QuickStart</title>
+    <title>Bigland</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Polyfill(s) for older browsers -->
+    <script src="app/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     <script src="node_modules/core-js/client/shim.min.js"></script>
 
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
+    <link rel="import" href="app/bower_components/iron-flex-layout/iron-flex-layout.html">
+    <link rel="import" href="app/bower_components/paper-styles/color.html">
+    <link rel="import" href="app/bower_components/paper-styles/default-theme.html">
+    <link rel="import" href="app/bower_components/paper-styles/typography.html">
+    <link rel="import" href="app/bower_components/paper-styles/shadow.html">
+
+    <!-- Polymer Elements -->
+    <link rel="import" href="app/bower_components/paper-button/paper-button.html">
+    <link rel="import" href="app/bower_components/paper-card/paper-card.html">
+    <link rel="import" href="app/bower_components/paper-checkbox/paper-checkbox.html">
+    <link rel="import" href="app/bower_components/paper-input/paper-input.html">
+
     <script src="systemjs.config.js"></script>
     <script>
-      System.import('app').catch(function(err){ console.error(err); });
+      document.addEventListener('WebComponentsReady', function() {
+        System.import('app').catch(function(err){ console.error(err); });
+      });
     </script>
   </head>
 
