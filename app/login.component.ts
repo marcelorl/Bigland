@@ -5,7 +5,7 @@ import {AuthenticationService, User} from './authentication.service'
   selector: 'login-form',
   providers: [AuthenticationService],
   template: `
-    <div class="container" >
+    <div class="container">
       <paper-card heading="Faça seu login">
         <div class="panel-body">
           <div class="row">
@@ -29,18 +29,18 @@ import {AuthenticationService, User} from './authentication.service'
     </div>
     	`,
   styles: [`
-    paper-button.fancy {
-      background: green;
-      color: yellow;
+    paper-card {
+      width: 50%;
     }
     
-    paper-button.fancy:hover {
-      background: lime;
+    paper-input {
+      width: 90%;
+      margin: auto;
     }
     
-    paper-button[disabled],
-    paper-button[toggles][active] {
-      background: red;
+    paper-button {
+      width: 20%;
+      margin: 20px auto;
     }
   `]
 })
