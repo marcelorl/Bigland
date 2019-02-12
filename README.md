@@ -1,5 +1,7 @@
 # Bigland
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/marcelorl/Bigland.svg)](https://greenkeeper.io/)
+
 ## Installation
 
  - `npm i --silent --progress=false`
